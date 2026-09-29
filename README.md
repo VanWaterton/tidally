@@ -30,11 +30,25 @@ A slick terminal client for [Tidal](https://tidal.com), written in Rust with
 [Releases](https://github.com/VanWaterton/tidally/releases), extract it, and put
 `tidally` somewhere on your `PATH`.
 
-**With Cargo** (Rust 1.90+):
+**With Cargo:**
 
-```sh
-cargo install --git https://github.com/VanWaterton/tidally --locked
-```
+1. Install the dependencies:
+
+   | Distro | Command |
+   |---|---|
+   | Arch / Manjaro / CachyOS | `sudo pacman -S --needed base-devel mpv libpulse` |
+   | Debian / Ubuntu / Mint | `sudo apt install build-essential mpv pulseaudio-utils` |
+   | Fedora | `sudo dnf install gcc mpv pulseaudio-utils` (mpv comes from [RPM Fusion](https://rpmfusion.org/Configuration)) |
+
+2. Install Rust 1.90 or newer from [rustup.rs](https://rustup.rs) (distro packages are often
+   older).
+3. Build and install Tidally:
+
+   ```sh
+   cargo install --git https://github.com/VanWaterton/tidally --locked
+   ```
+
+   This puts `tidally` in `~/.cargo/bin`. If your shell can't find it, open a new terminal.
 
 **Arch Linux:** a `-git` PKGBUILD is in [`packaging/arch`](packaging/arch/PKGBUILD).
 
