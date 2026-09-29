@@ -5,6 +5,10 @@ on:
     branches: [main]
   pull_request:
 
+# CI only reads the code; don't give the job token write access.
+permissions:
+  contents: read
+
 env:
   CARGO_TERM_COLOR: always
 
