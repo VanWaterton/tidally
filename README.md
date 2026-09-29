@@ -113,13 +113,7 @@ eq = "Flat"               # starting EQ preset: Flat, Bass Boost, Loudness, Rock
   all system audio, not only tidally.
 - **EQ:** presets are applied as an ffmpeg filter inside mpv. Each preset lowers the overall
   level by its largest boost to avoid clipping.
-
-## Remote edition (experimental)
-
-The repository also contains `tidally-remote`, which plays through a sound server forwarded
-from your SSH client (for example, running the app on a desktop while listening on a tablet).
-It is **not released yet** while its security design is reviewed. See
-[docs/remote-audio.md](docs/remote-audio.md).
+  
 
 ## Roadmap
 
@@ -129,6 +123,7 @@ It is **not released yet** while its security design is reviewed. See
 - MPRIS (media keys, `playerctl`)
 - Synced lyrics
 - Remembering the queue and volume between runs
+- Remote stream
 
 ## Contributing
 
