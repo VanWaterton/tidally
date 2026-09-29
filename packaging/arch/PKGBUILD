@@ -7,12 +7,12 @@ pkgdesc="Terminal client for Tidal with album art, spectrum visualizer and EQ"
 arch=('x86_64' 'aarch64')
 url="https://github.com/VanWaterton/tidally"
 license=('MIT OR Apache-2.0')
-depends=('mpv' 'gcc-libs' 'glibc')
+depends=('mpv' 'libgcc' 'glibc')
 optdepends=('libpulse: spectrum visualizer (parec)')
 makedepends=('cargo' 'git' 'cmake' 'clang')
 provides=("$_pkgname")
 conflicts=("$_pkgname")
-options=('!lto')
+options=('!lto' '!debug')
 source=("git+$url.git")
 sha256sums=('SKIP')
 
