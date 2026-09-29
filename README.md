@@ -15,8 +15,8 @@ A slick terminal client for [Tidal](https://tidal.com), written in Rust with
 > subscription, and may break if Tidal changes their API. Use it for personal listening, in
 > line with Tidal's terms.
 
-<img width="1028" height="768" alt="Image" src="https://github.com/user-attachments/assets/68b44ed4-f878-486d-a475-3dfe1e818ddb" />
-<img width="1024" height="768" alt="Image" src="https://github.com/user-attachments/assets/f67a369f-16ab-4a86-95dc-f2825d2858d4" />
+<img width="729" height="378" alt="Image" src="https://github.com/user-attachments/assets/68b44ed4-f878-486d-a475-3dfe1e818ddb" />
+<img width="729" height="378" alt="Image" src="https://github.com/user-attachments/assets/f67a369f-16ab-4a86-95dc-f2825d2858d4" />
 
 ## Requirements
 
